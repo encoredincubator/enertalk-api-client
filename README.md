@@ -31,21 +31,35 @@ api.getUser()
 
 
 ## Auth Config
+
+Set the `authConfig` at the point of initialization.
+
 ```js
 const api = new EnerTalkAPI({
-  accessToken: 'yourAccessToken', // required
+  accessToken: 'yourAccessToken', // optional
   refreshToken: 'yourRefreshToken', // optional
   clientId: 'yourClientId', // optional
   clientSecret: 'yourClientSecret', // optional
-  domain: 'yourCustomAuthServerDomain', // optional, override
+  domain: 'yourCustomAuthServerDomain', // optional & override
 });
 ```
+
+Or you can update the `authConfig` at any time.
+
+```js
+api.updateAuthConfig({
+  accessToken: 'yourAccessToken', // required
+  refreshToken: 'yourRefreshToken', // optional
+});
+```
+
 > The prameters `refreshToken`, `clientId`, `clientSecret`, `domain` are
 > used to issue new access token.
 
 
 ## Options
-This options follow [axios request config](https://github.com/mzabriskie/axios#request-config)
+This options follow [axios request config](https://github.com/mzabriskie/axios#request-config).
+
 For example,
 ```js
 const api = new EnerTalkAPI(authConfig, {
