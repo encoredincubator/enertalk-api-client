@@ -1,6 +1,6 @@
 {
   "name": "enertalk-api-client",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "main": "index.js",
   "repository": {
     "url": "https://github.com/yongdamsh/enertalk-api-client.git",
@@ -11,5 +11,12 @@
   "dependencies": {
     "axios": "^0.15.3",
     "buffer": "^5.0.3"
+  },
+  "devDependencies": {
+    "jest": "^18.1.0",
+    "moxios": "^0.3.0"
+  },
+  "scripts": {
+    "test": "jest --watch"
   }
 }
