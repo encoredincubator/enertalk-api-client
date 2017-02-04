@@ -1,6 +1,11 @@
 # EnerTalk API Client
 The EnerTalk API Wrapper for convenience
 
+## Requirements
+Authentication must be perform by EnerTalk tokens based on OAuth2.  
+You can find a way to get tokens on [our developer site](https://developer.encoredtech.com/authentication/).  
+
+
 ## Getting Started
 
 #### Install Package
@@ -57,7 +62,7 @@ api.updateAuthConfig({
 > used to issue new access token.
 
 
-## Options
+## Request Options
 This option follows [axios request config](https://github.com/mzabriskie/axios#request-config).
 
 For example,
