@@ -58,7 +58,7 @@ api.updateAuthConfig({
 
 
 ## Options
-This options follow [axios request config](https://github.com/mzabriskie/axios#request-config).
+This option follows [axios request config](https://github.com/mzabriskie/axios#request-config).
 
 For example,
 ```js
