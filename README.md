@@ -61,7 +61,7 @@ api.updateAuthConfig({
   // ...otherFields,
 });
 ```
-> NOTE:
+> NOTE:  
 > 1. The prameters `refreshToken`, `clientId`, `clientSecret`, `domain` are
 > used to issue new access token.  
 > 2. `updateTokenFn` will be called when new token issued. You can sync the token object with your token storage.
