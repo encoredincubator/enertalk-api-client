@@ -41,11 +41,14 @@ Set the `authConfig` at the point of initialization.
 
 ```js
 const api = new EnerTalkAPI({
-  accessToken: 'yourAccessToken', // optional
-  refreshToken: 'yourRefreshToken', // optional
-  clientId: 'yourClientId', // optional
-  clientSecret: 'yourClientSecret', // optional
-  domain: 'yourCustomAuthServerDomain', // optional & override
+  accessToken: 'yourAccessToken',
+  refreshToken: 'yourRefreshToken',
+  clientId: 'yourClientId',
+  clientSecret: 'yourClientSecret',
+  domain: 'yourCustomAuthServerDomain', // Default domain will be override
+  updateTokenFn: (tokenObject) => {
+    // The logic that update your token storage
+  },
 });
 ```
 
@@ -53,13 +56,15 @@ Or you can update the `authConfig` at any time.
 
 ```js
 api.updateAuthConfig({
-  accessToken: 'yourAccessToken', // required
-  refreshToken: 'yourRefreshToken', // optional
+  accessToken: 'yourAccessToken',
+  refreshToken: 'yourRefreshToken',
+  // ...otherFields,
 });
 ```
-
-> The prameters `refreshToken`, `clientId`, `clientSecret`, `domain` are
-> used to issue new access token.
+> NOTE:
+> 1. The prameters `refreshToken`, `clientId`, `clientSecret`, `domain` are
+> used to issue new access token.  
+> 2. `updateTokenFn` will be called when new token issued. You can sync the token object with your token storage.
 
 
 ## Request Options
