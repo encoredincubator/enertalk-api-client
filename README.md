@@ -76,10 +76,24 @@ const api = new EnerTalkAPI(authConfig, {
 
 ## Supported API Methods
 
-`getUser:` Get user profile  
-`listSites:` List sites  
-`listDevicesOfSite:siteIds` List devices of multiple sites  
-`getBills:siteId` Get bill information  
+| name:[...parameters] | description |
+| --- | --- |
+| `getUser:` | Get user profile |
+| `listSites:` | List sites |
+| `listDevicesOfSite:siteIds` | List devices of multiple sites |
+| `getBills:siteId` | Get bill information |
+| `periodicUsagesBySite:siteId:params` | Get usage for a site |
+| `periodicUsagesByTag:siteId:tagId:params` | Get usage for a tag |
+| `periodicUsagesByDevice:deviceId:params` | Get usage for a device |
+| `periodicUsagesByDeviceWithChannels:devcieId:params` | Get usage for a device with channels |
+| `billingUsagesBySite:siteId:params` | Get usage and bill for a site |   
+| `billingUsagesByTag:siteId:tagId:params` | Get usage and bill for a tag |
+| `billingUsagesByDevice:deviceId:params` | Get usage and bill for a device |  
+| `billingUsagesByDeviceWithChannels:devcieId:params` | Get usage and bill for a device with channels |
+| `realtimeUsagesBySite:siteId` | Get real time usage for a site |
+| `realtimeUsagesByTag:siteId:tagId` | Get real time usage for a tag |
+| `realtimeUsagesByDevice:deviceId` | Get real time usage for a device |
+| `realtimeUsagesByDeviceWithChannels:devcieId` | Get real time usage for a device with channels |  
 
 ...
 
