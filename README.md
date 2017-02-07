@@ -46,8 +46,12 @@ const api = new EnerTalkAPI({
   clientId: 'yourClientId',
   clientSecret: 'yourClientSecret',
   domain: 'yourCustomAuthServerDomain', // Default domain will be override
-  updateTokenFn: (tokenObject) => {
+  tokenUpdateFn: (tokenObject) => {
     // The logic that update your token storage
+    // `tokenObject`has fields below:
+    // - `accessToken`
+    // - `refreshToken`
+    // - `expiresIn` (unit: second)
   },
 });
 ```
@@ -64,7 +68,7 @@ api.updateAuthConfig({
 > NOTE:  
 > 1. The prameters `refreshToken`, `clientId`, `clientSecret`, `domain` are
 > used to issue new access token.  
-> 2. `updateTokenFn` will be called when new token issued. You can sync the token object with your token storage.
+> 2. `tokenUpdateFn` will be called when new token issued. You can sync the token object with your token storage.
 
 
 ## Request Options
