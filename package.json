@@ -1,6 +1,6 @@
 {
   "name": "enertalk-api-client",
-  "version": "0.3.5",
+  "version": "0.3.6",
   "main": "index.js",
   "repository": {
     "url": "https://github.com/yongdamsh/enertalk-api-client.git",
