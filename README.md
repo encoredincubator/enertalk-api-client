@@ -82,6 +82,20 @@ const api = new EnerTalkAPI(authConfig, {
 });
 ```
 
+## Get API
+There are two ways to get an Api object. It's `getApi(key)` and `getAllApis()`.   
+`key` is name of API.
+
+For example,
+
+```js
+//enerTalkApi is instance of EnerTalkAPI
+
+const billApi = enerTalkApi.getApi('bill');
+const allApis = enerTalkApi.getAllApis();
+
+```
+
 
 ## Supported API Methods
 
