@@ -16,8 +16,8 @@
     "babel-cli": "^6.23.0",
     "babel-core": "^6.23.1",
     "babel-jest": "^19.0.0",
-    "babel-loader": "^6.3.2",
-    "babel-preset-es2015": "^6.22.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-latest": "^6.22.0",
     "jest": "^18.1.0",
     "moxios": "^0.3.0"
   },
@@ -26,11 +26,21 @@
     "build": "babel index.js lib/* --out-dir dist --ignore __tests__"
   },
   "babel": {
-    "presets": ["es2015"]
+    "presets": [
+      "latest",
+      "babel-plugin-transform-object-rest-spread"
+    ]
   },
   "jest": {
     "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
-    "testFileExtensions": ["es6", "js"],
-    "moduleFileExtensions": ["js", "json", "es6"]
+    "testFileExtensions": [
+      "es6",
+      "js"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "es6"
+    ]
   }
 }
