@@ -111,7 +111,7 @@ Clicking on a category takes you to the api document.
   <thead>
     <tr>
       <th>category</th>
-      <th>args</th>
+      <th>method</th>
       <th>descriptions</th>
     </tr>
   </thead>
