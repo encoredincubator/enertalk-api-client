@@ -1,6 +1,6 @@
 {
   "name": "enertalk-api-client",
-  "version": "0.3.8",
+  "version": "0.4.0",
   "main": "dist/index.js",
   "repository": {
     "url": "https://github.com/yongdamsh/enertalk-api-client.git",
@@ -23,7 +23,8 @@
   },
   "scripts": {
     "test": "jest --watch",
-    "build": "babel index.js lib/* --out-dir dist --ignore __tests__"
+    "build": "babel index.js lib/* --out-dir dist --ignore __tests__",
+    "publish": "npm run build && npm publish"
   },
   "babel": {
     "presets": [
