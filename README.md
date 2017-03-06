@@ -82,27 +82,28 @@ const api = new EnerTalkAPI(authConfig, {
 });
 ```
 
-## Get API
-There are two ways to get an Api object. It's `getApi(key)` and `getAllApis()`.   
-`key` is name of API.
+## Pick API Category
+You can pick specific categories by second or third option when construct instance.
 
 For example,
 
 ```js
-//enerTalkApi is instance of EnerTalkApi
-//get only one api.
-const billApi = enerTalkApi.getApis('bills');
-billApi.getSuppliers();
-
-//get multiple apis.
-const multipleApis = enerTalkApi.getApis(['bills', 'usages', ...]);
-multipleApis.bills.getSuppliers();
-
-//get All apis.
-const multipleApis = enerTalkApi.getApis();
-
+const api = new EnerTalkAPI(authConfig, {
+  baseURL: 'yourCustomResourceServerDomain',
+  timeout: 10000,
+}, ['bills', 'devices', 'usages']);
 ```
 
+or `apiConfig` options can be omitted.
+
+```js
+const api = new EnerTalkAPI(authConfig, ['bills', 'devices', 'usages']);
+```
+
+It's possible to pass single API Category
+```js
+const api = new EnerTalkAPI(authConfig, 'bills');
+```
 
 ## Supported API Methods
 Clicking on a category takes you to the api document.
