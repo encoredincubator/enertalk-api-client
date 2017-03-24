@@ -1,12 +1,16 @@
 {
   "name": "enertalk-api-client",
-  "version": "0.4.7",
+  "version": "0.4.8",
   "main": "lib/client.js",
   "repository": {
-    "url": "https://github.com/yongdamsh/enertalk-api-client.git",
+    "url": "https://github.com/encoredincubator/enertalk-api-client.git",
     "type": "git"
   },
-  "author": "yongdamsh <yongdamsh@gmail.com>",
+  "author": "yongdamsh <yongdamsh@encoredtech.com>",
+  "contributors": [
+    "koansang <koansang@encoredtech.com>",
+    "jiwoniyEncored <jiwoniy@encoredtech.com>"
+  ],
   "license": "MIT",
   "dependencies": {
     "axios": "^0.15.3",
