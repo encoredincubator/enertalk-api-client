@@ -65,10 +65,10 @@ api.updateAuthConfig({
   // ...otherFields,
 });
 ```
-> NOTE:  
+> NOTES:  
 > 1. The prameters `refreshToken`, `clientId`, `clientSecret`, `domain` are
 > used to issue new access token.  
-> 2. `tokenUpdateFn` will be called when new token issued. You can sync the token object with your token storage.
+> 2. `tokenUpdateFn` will be called when a new token issued. You can sync the token object with your token storage.
 
 
 ## Request Options
@@ -305,7 +305,6 @@ Clicking on a category takes you to the api document.
       <td>updateTimeline(registrationId:String, timelineId:Number, data:Object)</td>
       <td>Update timeline</td>
     </tr>
-
     <tr>
       <td rowspan="2">legacy</td>
       <td>legacy(options:Object)</td>
