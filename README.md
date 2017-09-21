@@ -305,6 +305,12 @@ Clicking on a category takes you to the api document.
       <td>updateTimeline(registrationId:String, timelineId:Number, data:Object)</td>
       <td>Update timeline</td>
     </tr>
+
+    <tr>
+      <td rowspan="2">legacy</td>
+      <td>legacy(options:Object)</td>
+      <td>The bridge of old APIs</td>
+    </tr>
   </tbody>
 </table>
 
