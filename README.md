@@ -173,6 +173,10 @@ Clicking on a category takes you to the api document.
       <td>Get push states</td>
     </tr>
     <tr>
+      <td>resetPushToken()</td>
+      <td>Reset push token</td>
+    </tr>    
+    <tr>
       <td rowspan="5">[sites](https://developer.encoredtech.com/api2-sites/)</td>
       <td>createSite(data:Object)</td>
       <td>Create a site</td>
