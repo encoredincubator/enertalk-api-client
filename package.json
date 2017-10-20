@@ -1,7 +1,7 @@
 {
   "name": "enertalk-api-client",
-  "version": "0.5.0",
-  "main": "lib/client.js",
+  "version": "0.6.0",
+  "main": "lib/index.js",
   "repository": {
     "url": "https://github.com/encoredincubator/enertalk-api-client.git",
     "type": "git"
@@ -17,18 +17,21 @@
     "buffer": "^5.0.3"
   },
   "devDependencies": {
-    "jest": "^18.1.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-jest": "^21.2.0",
+    "babel-preset-env": "^1.6.0",
+    "jest": "^21.0.2",
     "moxios": "^0.3.0"
   },
   "scripts": {
-    "test": "jest --watch"
+    "test": "jest --watch",
+    "build": "babel lib --out-dir build --ignore __tests__"
   },
   "jest": {
-    "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
-    "testFileExtensions": [
-      "es6",
-      "js"
-    ],
+    "transform": {
+      ".*": "<rootDir>/node_modules/babel-jest"
+    },
     "moduleFileExtensions": [
       "js",
       "json",

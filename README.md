@@ -16,10 +16,19 @@ You can find a way to get tokens on [our developer site](https://developer.encor
 #### Import Package
 ```js
 const EnerTalkAPI = require('enertalk-api-client');
-
 or
-
 import EnerTalkAPI from 'enertalk-api-client';
+```
+
+> NOTE:  
+> There's a [compatibility issue](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#npm-run-build-fails-to-minify).  
+> If you're using webpack based project like [create-react-app](https://github.com/facebookincubator/create-react-app),  
+> please use the build file as below:
+
+```js
+const EnerTalkAPI = require('enertalk-api-client/build');
+or
+import EnerTalkAPI from 'enertalk-api-client/build';
 ```
 
 #### Make an instance
