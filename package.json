@@ -26,7 +26,7 @@
     "moxios": "^0.3.0"
   },
   "scripts": {
-    "prepush": "yarn build && git add . && git commit --amend --no-edit",
+    "precommit": "yarn build && git add .",
     "test": "jest --watch",
     "build": "babel lib --out-dir build --ignore __tests__"
   },
