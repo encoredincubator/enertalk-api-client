@@ -14,7 +14,8 @@
   "license": "MIT",
   "dependencies": {
     "axios": "^0.15.3",
-    "buffer": "^5.0.3"
+    "buffer": "^5.0.3",
+    "husky": "^0.14.3"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -25,6 +26,7 @@
     "moxios": "^0.3.0"
   },
   "scripts": {
+    "precommit": "yarn build && git add .",
     "test": "jest --watch",
     "build": "babel lib --out-dir build --ignore __tests__"
   },
