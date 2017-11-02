@@ -15,7 +15,7 @@ var push = {
   getPushStates: function getPushStates() {
     return this.get(endpoint.listPushInfoInSite);
   },
-  resetPushToken: function resetPushToken() {
+  resetPushToken: function resetPushToken(params) {
     return this.delete(endpoint.pushInfo, params || {});
   }
 };
