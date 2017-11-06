@@ -165,7 +165,7 @@ Clicking on a category takes you to the api document.
       <td>Delete device</td>
     </tr>
     <tr>
-      <td rowspan="4">[push](https://developer.encoredtech.com/api2-push/)</td>
+      <td rowspan="5">[push](https://developer.encoredtech.com/api2-push/)</td>
       <td>registerPushId(data:Object)</td>
       <td>Register push id</td>
     </tr>
@@ -182,7 +182,7 @@ Clicking on a category takes you to the api document.
       <td>Get push states</td>
     </tr>
     <tr>
-      <td>resetPushToken()</td>
+      <td>resetPushToken(params: Object)</td>
       <td>Reset push token</td>
     </tr>    
     <tr>
