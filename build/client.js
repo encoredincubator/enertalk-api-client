@@ -63,8 +63,8 @@ var EnerTalkAPIClient = function (_axios$Axios) {
       return response;
     }, function (error) {
       var failedRequestConfig = error.config;
-      var data = error.response.data;
-      var tokenExpired = data.code === 401 && data.type === 'UnauthorizedError';
+      var data = error.response && error.response.data;
+      var tokenExpired = data && data.code === 401 && data.type === 'UnauthorizedError';
       var hasRefreshConfig = _this.authConfig.refreshToken && _this.authConfig.clientId && _this.authConfig.clientSecret;
 
       if (_this.tokenRefreshing) {
