@@ -1,10 +1,10 @@
 "use strict";
 
 module.exports = {
-  timelines: function timelines(registrationId) {
-    return "/1.2/devices/" + registrationId + "/timelines";
+  timelines: function timelines(siteId) {
+    return "/1.2/sites/" + siteId + "/timelines";
   },
-  timeline: function timeline(registrationId, timelineId) {
-    return "/1.2/devices/" + registrationId + "/timelines/" + timelineId;
+  timeline: function timeline(siteId, timelineId) {
+    return "/1.2/sites/" + siteId + "/timelines/" + timelineId;
   }
 };

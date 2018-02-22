@@ -3,11 +3,11 @@
 var endpoint = require('./endpoint');
 
 var timelines = {
-  timelines: function timelines(registrationId, params) {
-    return this.get(endpoint.timelines(registrationId), { params: params });
+  timelines: function timelines(siteId, params) {
+    return this.get(endpoint.timelines(siteId), { params: params });
   },
-  updateTimeline: function updateTimeline(registrationId, timelineId, data) {
-    return this.put(endpoint.timeline(registrationId, timelineId), data || {});
+  updateTimeline: function updateTimeline(siteId, timelineId, data) {
+    return this.put(endpoint.timeline(siteId, timelineId), data || {});
   }
 };
 
