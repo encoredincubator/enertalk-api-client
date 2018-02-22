@@ -8,6 +8,12 @@ var timelines = {
   },
   updateTimeline: function updateTimeline(registrationId, timelineId, data) {
     return this.put(endpoint.timeline(registrationId, timelineId), data || {});
+  },
+  timelinesBySite: function timelinesBySite(siteId, params) {
+    return this.get(endpoint.timelines(siteId), { params: params });
+  },
+  updateTimelineBySite: function updateTimelineBySite(siteId, timelineId, data) {
+    return this.put(endpoint.timeline(siteId, timelineId), data || {});
   }
 };
 
