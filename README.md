@@ -311,12 +311,21 @@ Clicking on a category takes you to the api document.
     </tr>
     <tr>
       <td rowspan="2">timelines</td>
-      <td>timelines(siteId:String, params:Object)</td>
+      <td>timelines(registrationId:String, params:Object)</td>
+      <td>Get timelines for a device</td>
+    </tr>
+    <tr>
+      <td>updateTimeline(registrationId:String, timelineId:Number, data:Object)</td>
+      <td>Update timeline</td>
+    </tr>
+    <tr>
+      <td rowspan="2">timelinesBySite</td>
+      <td>timelinesBySite(siteId:String, params:Object)</td>
       <td>Get timelines for a site</td>
     </tr>
     <tr>
-      <td>updateTimeline(siteId:String, timelineId:Number, data:Object)</td>
-      <td>Update timeline</td>
+      <td>updateTimelineBySite(siteId:String, timelineId:Number, data:Object)</td>
+      <td>Update timeline for a site</td>
     </tr>
     <tr>
       <td rowspan="2">legacy</td>
