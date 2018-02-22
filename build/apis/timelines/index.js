@@ -10,10 +10,10 @@ var timelines = {
     return this.put(endpoint.timeline(registrationId, timelineId), data || {});
   },
   timelinesBySite: function timelinesBySite(siteId, params) {
-    return this.get(endpoint.timelines(siteId), { params: params });
+    return this.get(endpoint.timelinesBySite(siteId), { params: params });
   },
   updateTimelineBySite: function updateTimelineBySite(siteId, timelineId, data) {
-    return this.put(endpoint.timeline(siteId, timelineId), data || {});
+    return this.put(endpoint.timelineBySite(siteId, timelineId), data || {});
   }
 };
 
