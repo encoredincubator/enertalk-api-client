@@ -9,8 +9,8 @@ var bills = {
   getSuppliers: function getSuppliers(params) {
     return this.get(endpoint.getSuppliers, params || {});
   },
-  getRatePlanSchema: function getRatePlanSchema(siteId, ratePlanId) {
-    return this.get(endpoint.getRatePlanSchema(siteId, ratePlanId));
+  getRatePlanSchema: function getRatePlanSchema(supplierId, ratePlanId) {
+    return this.get(endpoint.getRatePlanSchema(supplierId, ratePlanId));
   },
   updateBills: function updateBills(siteId, data) {
     return this.patch(endpoint.getBills(siteId), data || {});
