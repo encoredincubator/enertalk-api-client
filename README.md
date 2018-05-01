@@ -127,16 +127,20 @@ Clicking on a category takes you to the api document.
   </thead>
   <tbody>
     <tr>
-      <td rowspan="3">[bills](https://developer.encoredtech.com/api2-bill/)</td>
+      <td rowspan="4">[bills](https://developer.encoredtech.com/api2-bill/)</td>
       <td>getBills(siteId:String)</td>
       <td>Get billing information</td>
+    </tr>
+    <tr>
+      <td>updateBills(siteId:String, data:Object)</td>
+      <td>Update bill information</td>
     </tr>
     <tr>
       <td>getSuppliers()</td>
       <td>List suppliers</td>
     </tr>
     <tr>
-      <td>getRatePlanSchema(siteId:String, ratePlanId:Number)</td>
+      <td>getRatePlanSchema(supplierId:String, ratePlanId:Number)</td>
       <td>Get rate plan schema</td>
     </tr>
     <tr>
